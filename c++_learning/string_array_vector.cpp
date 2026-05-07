@@ -331,31 +331,46 @@ int main() {
 	}
 	return 0;
 }*/
-/* Write a C++ program to check whether numbers in a vector can be rearranged 
-so that each number appears exactly once in a consecutive list of numbers. Return true otherwise false.*/ 
+//Write a C++ program to check whether numbers in a vector can be rearranged
+//so that each number appears exactly once in a consecutive list of numbers. Return true otherwise false.
+//#include<iostream>
+//#include<vector>
+//#include<algorithm>
+//using namespace std;
+//int main() {
+//	bool iscons = true;
+//	vector<int> num = {1,2,4,6,5,8,7,10,9};
+//	vector<int> num = { 1, 2, 5, 7, 4, 3, 6 };
+//	vector<int> num = { 1, 3,6,4,5 };
+//	sort(num.begin(),num.end());
+//	for (int i = 1; i < num.size();i++ ) {
+//			iscons = false;
+//			break;
+//		}
+//	}
+//	if (iscons == true) {
+//		cout << "True";
+//	}
+//	else {
+//		cout << "False";
+//	}
+//	return 0;
+//}
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
-using namespace std;
+//Write a C++ program that returns the 
+// elements in a vector that are strictly smaller than their adjacent left and right neighbours.
+//#include<iostream>
+//#include<vector>
+//using namespace std;
+//int main() {
+	//vector<int> num = {5,3,8,2,7,1,9};
+	//vector<int> num = { 7, 2, 5, 3, 1, 5, 6 };
+	//vector<int> num = { 1, 2 ,5, 0, 3, 1, 7 };
 
-int main() {
-	bool iscons = true;
-	//vector<int> num = {1,2,4,6,5,8,7,10,9};
-	//vector<int> num = { 1, 2, 5, 7, 4, 3, 6 };
-	vector<int> num = { 1, 3,6,4,5 };
-	sort(num.begin(),num.end());
-	for (int i = 1; i < num.size();i++ ) {
-		if (num[i]!=num[i-1]+1) {
-			iscons = false;
-			break;
-		}
-	}
-	if (iscons == true) {
-		cout << "True";
-	}
-	else {
-		cout << "False";
-	}
-	return 0;
-}
+	//for (int i = 1; i < num.size() - 1; i++) {
+	//	if (num[i] < num[i - 1] && num[i] < num[i+1]) {
+	//		cout << " " << num[i];
+	//	}
+	//}
+	//return 0;
+//}
