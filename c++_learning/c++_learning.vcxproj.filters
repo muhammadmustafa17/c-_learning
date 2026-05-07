@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="array.cpp">
+    <ClCompile Include="string_array_vector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

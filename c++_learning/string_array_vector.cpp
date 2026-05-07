@@ -342,7 +342,8 @@ using namespace std;
 int main() {
 	bool iscons = true;
 	//vector<int> num = {1,2,4,6,5,8,7,10,9};
-	vector<int> num = { 1, 2, 5, 7, 4, 3, 6 };
+	//vector<int> num = { 1, 2, 5, 7, 4, 3, 6 };
+	vector<int> num = { 1, 3,6,4,5 };
 	sort(num.begin(),num.end());
 	for (int i = 1; i < num.size();i++ ) {
 		if (num[i]!=num[i-1]+1) {
