@@ -374,3 +374,30 @@ int main() {
 	//}
 	//return 0;
 //}
+
+/*3. Create an n x n Matrix from Input
+Write a C++ program to create an n x n matrix by taking an integer (n) as input from the user.*/
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main() {
+	int n;
+	cout << "Enter the size of Matrix: ";
+	cin >> n;
+	vector<vector<int>> matrix(n, vector<int>(n));
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n;j++) {
+			cin >> matrix[i][j];
+		}
+	}
+
+	cout << "Output: "<<endl;
+	for (int k = 0; k < n; k++) {
+		for (int l = 0; l < n; l++) {
+			cout << " " << matrix[k][l];
+		}
+		cout << endl;
+	}
+	return 0;
+}
