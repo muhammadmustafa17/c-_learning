@@ -404,7 +404,7 @@ int main() {
 /*4. Capitalize First Letter of Each Vector String
 
 Write a C++ program to capitalize the first character of each element of a given string vector. Return the new vector.*/
-#include<iostream>
+/*#include<iostream>
 #include<vector>
 #include<string>
 #include<cctype>
@@ -421,4 +421,62 @@ int main() {
 		cout  << words[j];
 	}
 	return 0;
+}*/
+
+/* 5. Verify Letters of Second String in First String
+Write a C++ program to verify that all of the letters in the second 
+string appear in the first string as well.Return true otherwise false.*/
+/*#include<iostream>
+#include<vector>
+#include<string>
+using namespace std;
+int main() {
+	vector<string> str = { "Python", "Py" };
+	bool pres = false;
+	for (int i = 0; i < str[1].length(); i++) {
+		for (int j = 0; j < str[1].length(); j++) {
+			if (str[0][i] == str[1][j]) {
+				pres = true;
+				break;
+			}
+		}
+		if (pres == false) {
+			cout << "Not present."; // need to edit it remembe to print charachters on every iteration
+		}
+		else {
+			cout << "Present.";
+		}
+	}
+}*/
+
+/*6. Filter Strings Containing Numbers from a Vector
+
+Write a C++ program that takes a vector of strings and returns only those strings that contain a number(s). Return an empty vector if none.*/
+
+#include<iostream>
+#include<string>
+#include<vector>
+#include<cctype>
+using namespace std;
+int main() {
+	vector<string> word = {"red", "green123", "1black", "white"};
+	vector<string> result;
+
+	for (int i = 0; i < word.size();i++) {
+		bool equal = false;
+		for (int j = 0; j < word[i].length(); j++) {
+			if (isdigit(word[i][j])) {
+				equal = true;
+				break;
+			}
+		}
+		if (equal == true) {
+			result.push_back(word[i]);
+		}
+	}
+	for (int k = 0; k < result.size();k++) {
+		cout << " " << result[k];
+	}
+	return 0;
 }
+
