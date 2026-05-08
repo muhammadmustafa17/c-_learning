@@ -377,7 +377,7 @@ int main() {
 
 /*3. Create an n x n Matrix from Input
 Write a C++ program to create an n x n matrix by taking an integer (n) as input from the user.*/
-#include<iostream>
+/*#include<iostream>
 #include<vector>
 using namespace std;
 
@@ -398,6 +398,27 @@ int main() {
 			cout << " " << matrix[k][l];
 		}
 		cout << endl;
+	}
+	return 0;
+}*/
+/*4. Capitalize First Letter of Each Vector String
+
+Write a C++ program to capitalize the first character of each element of a given string vector. Return the new vector.*/
+#include<iostream>
+#include<vector>
+#include<string>
+#include<cctype>
+
+using namespace std;
+
+int main() {
+	vector<string> words = { "muhammad ", "mustafa ", "is ","learning ", "to ", "code"};
+
+	for (int i = 0; i < words.size();i++) {
+		words[i][0] = toupper(words[i][0]);
+	}
+	for (int j = 0; j < words.size();j++) {
+		cout  << words[j];
 	}
 	return 0;
 }
