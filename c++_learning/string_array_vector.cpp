@@ -453,7 +453,7 @@ int main() {
 
 Write a C++ program that takes a vector of strings and returns only those strings that contain a number(s). Return an empty vector if none.*/
 
-#include<iostream>
+/*#include<iostream>
 #include<string>
 #include<vector>
 #include<cctype>
@@ -478,5 +478,6 @@ int main() {
 		cout << " " << result[k];
 	}
 	return 0;
-}
+}*/
+/* END of String ARRAY and VECTOR I LEARNED A LOT NEW SKILLS SOLVING THESE QUESTION*/
 
